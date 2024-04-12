@@ -1,0 +1,19 @@
+body{
+    background-color: ghostwhite;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#anonymously{
+    font-size: 18px;
+    font-style: italic;
+}
+

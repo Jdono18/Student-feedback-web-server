@@ -1,0 +1,43 @@
+<div class="bg-info-subtle mb-4 p-4 rounded-4 text-center">
+    <h1> Student Feedback Form </h1>
+    <p id="anonymously"> Please provide feedback you may do so anonymously</p>
+</div>
+
+<div class="row"> <!-- new div for the row-->
+    <div class="col-md-3">
+        <h2> Instructions</h2>
+        <p> As one of our students, your thoughts and feedback are important.</p>
+        <p> Please send them using this form.</p>
+        <p> If you would like us to follow up with you, provide your contact information.</p>
+
+    </div> <!-- new div column for instructions-->
+
+    <div class="col-md-9"> <!-- new div col for instructions-->
+        <form action="/submit-feedback" method="POST">
+            <label class="form-label" for="student-name"> Name: </label>
+            <input name="name" class="form-control" id="student-name" type="text"> <br>
+
+            <label class="form-label" for="student-email"> Email:  </label>
+            <input name="email" class="form-control" id="student-email" type="email"> <br>
+
+            <label class="form-label" for="comments"> Comments: </label> <br>
+            <textarea name="comments" class="form-control" required id="comments" rows="15" cols="50"></textarea>  <br>
+
+            <p class="mx-1"> Are you a current student? </p>
+
+            <div class="form-check">
+                <input class="form-check-input" id="is-current" name="current-student?" value="yes" type="radio" checked>
+                <label class="form-check-label" for="is-current"> Yes </label>
+
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" id="not-current" name="current-student?" value="no" type="radio">
+                <label class="form-check-label" for="not-current"> No </label> <br> <br>
+            </div>
+
+            <input class="btn btn-primary" type="submit">
+
+        </form>
+    </div>
+</div>
